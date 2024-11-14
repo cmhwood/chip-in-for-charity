@@ -3,7 +3,7 @@ const pool = require('../modules/pool');
 const router = express.Router();
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
-const YOUR_DOMAIN = 'https://chip-in-for-charity-weathered-voice-5311.fly.dev/';
+const YOUR_DOMAIN = 'https://chip-in-for-charity.fly.dev/';
 
 // Endpoint to create a checkout session
 router.post('/create-checkout-session', async (req, res) => {
